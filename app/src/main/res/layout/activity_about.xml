@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient_background"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About the Weather App"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/about_description"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Our Weather Application provides users with up-to-date weather information in a user-friendly interface. The app integrates with the OpenWeatherMap API to fetch and display weather data for various locations."
+                android:textSize="16sp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/about_features_title"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Main Features"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/about_features_description"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Current Weather Data: Displays current weather conditions including temperature, humidity, wind speed, and weather description."
+                android:textSize="16sp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Forecast Information: Provides weather forecasts for the upcoming days."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="3. ListView Display: Utilizes a ListView to neatly organize and present weather data for easy browsing."
+                android:textSize="16sp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/about_technical_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technical Details"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/about_technical_description"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Language: Java\nDependencies:\n- androidx.appcompat:appcompat:1.7.0\n- androidx.core:core-ktx:1.13.1\nBuild Configuration: Managed using Kotlin DSL (build.gradle.kts)\n\nFor more details, visit OpenWeatherMap: https://openweathermap.org/"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/about_future_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Future Enhancements"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/about_future_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="1. Offline Mode: To provide weather information based on the last fetched data when the internet is unavailable.\n2. Customizable Widgets: Home screen widgets to display current weather data and forecasts.\n3. Notifications: Weather alerts and notifications for significant changes in weather conditions."
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

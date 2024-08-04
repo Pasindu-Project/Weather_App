@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- Custom Popup Theme -->
+    <style name="CustomPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/customBackgroundColor</item>
+        <item name="android:textColorPrimary">@color/customTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/customTextColorSecondary</item>
+    </style>
+</resources>
